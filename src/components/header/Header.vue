@@ -1,14 +1,15 @@
 <template>
   <div>
-    <v-app-bar dark>
+    <v-app-bar dark fixed  dense color="blue">
       <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
+      <v-spacer></v-spacer>
       <v-list-item-avatar>
         <img src="../../assets/logo.png" />
       </v-list-item-avatar>
-      <v-toolbar-title>Albert i Gordana</v-toolbar-title>
+      <v-toolbar-title><router-link to="/" style="color: white">Albert i Gordana</router-link></v-toolbar-title>
     </v-app-bar>
 
-    <v-navigation-drawer v-model="drawer" absolute temporary>
+    <v-navigation-drawer v-model="drawer" dark dense color="blue" fixed temporary>
       <v-list nav dense>
         <v-list-item-group active-class="black--text text--accent-4">
           <v-list-item

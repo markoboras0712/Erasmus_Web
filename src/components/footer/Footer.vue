@@ -1,11 +1,11 @@
 <template>
-  <v-footer class="font-weight-medium" dark>
+  <v-footer class="font-weight-medium" dark dense color="blue">
     <v-container fluid>
       <v-row>
-        <v-col sm="12" md="6">
+        <v-col md="6">
           <OwnersInfo />
         </v-col>
-        <v-col sm="12" md="6">
+        <v-col md="6">
           <CreatorsInfo />
         </v-col>
       </v-row>

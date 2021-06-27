@@ -1,7 +1,7 @@
 <template>
   <div>
-    <v-list disabled dense dark>
-      <v-list-item v-for="(item, index) in $t('items')" :key="(item, index)">
+    <v-list disabled dense dark color="blue">
+      <v-list-item v-for="(item, index) in $t('items')" :key="(item, index)" justify-space-around>
         <v-list-item-icon>
           <v-icon>{{ icons[index] }}</v-icon>
         </v-list-item-icon>
@@ -36,12 +36,6 @@ export default {
             title: 'Novalja, otok Pag, Hrvatska'
           },
           {
-            title: 'Tel: 00385 53 661 917'
-          },
-          {
-            title: 'Mob: 00385 91 554 1149'
-          },
-          {
             title: 'goran.semencic@gmail.com'
           }
         ]
@@ -53,12 +47,6 @@ export default {
           },
           {
             title: 'Novalja, island Pag, Croatia'
-          },
-          {
-            title: 'Tel: 00385 53 661 917'
-          },
-          {
-            title: 'Mob: 00385 91 554 1149'
           },
           {
             title: 'goran.semencic@gmail.com'
@@ -74,12 +62,6 @@ export default {
             title: 'Novalja, Insel Pag, Kroatien'
           },
           {
-            title: 'Tel: 00385 53 661 917'
-          },
-          {
-            title: 'Mob: 00385 91 554 1149'
-          },
-          {
             title: 'goran.semencic@gmail.com'
           }
         ]
@@ -91,12 +73,6 @@ export default {
           },
           {
             title: 'Novalja, isola Pag, Croazia'
-          },
-          {
-            title: 'Tel: 00385 53 661 917'
-          },
-          {
-            title: 'Mob: 00385 91 554 1149'
           },
           {
             title: 'goran.semencic@gmail.com'
@@ -112,12 +88,6 @@ export default {
             title: 'Novalja, otok Pag, Hrvaška'
           },
           {
-            title: 'Tel: 00385 53 661 917'
-          },
-          {
-            title: 'Mob: 00385 91 554 1149'
-          },
-          {
             title: 'goran.semencic@gmail.com'
           }
         ]
@@ -129,12 +99,6 @@ export default {
           },
           {
             title: 'Novalja, ostrov Pag, Chorvatsko'
-          },
-          {
-            title: 'Tel: 00385 53 661 917'
-          },
-          {
-            title: 'Mob: 00385 91 554 1149'
           },
           {
             title: 'goran.semencic@gmail.com'

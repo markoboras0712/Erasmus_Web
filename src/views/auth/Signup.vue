@@ -1,5 +1,12 @@
 <template>
-  <v-container>
+  <v-container class="mt-10" fluid>
+    <v-carousel hide-delimiters style="height: 45vh">
+      <v-carousel-item
+      v-for="(beach,i) in beaches"
+      :key="i"
+      :src="beach.image"
+    ></v-carousel-item>
+        </v-carousel>
     <v-card>
       <v-card-title>
         <h1 class="display-1">{{ $t('signup')}}</h1>
@@ -47,6 +54,7 @@
 
 <script>
 import messages from '../../data/authRules'
+import beaches from '../../data/novalja/beaches.js'
 
 export default {
   data () {
@@ -77,6 +85,9 @@ export default {
         v => !!v || this.$t('req'),
         (v) => v === this.password || this.$t('same')
       ]
+    },
+    beaches () {
+      return beaches
     }
   },
   methods: {

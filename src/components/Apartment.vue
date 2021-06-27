@@ -1,5 +1,5 @@
 <template>
-  <v-card class="mx-auto" max-width="600">
+  <v-card class="mx-auto mb-10" max-width="600" color="grey">
     <v-img :src="src" height="400px" contain></v-img>
 
     <v-card-title>{{ t(apartment.title) }}</v-card-title>
@@ -7,7 +7,7 @@
     <v-card-subtitle>{{ t(apartment.type) }}</v-card-subtitle>
 
     <v-card-actions>
-      <v-btn color="info" text :to="{ name: 'apartment', params: { id: this.apartment.id } }">{{ $t('reservation')}}</v-btn>
+      <v-btn color="yellow" text :to="{ name: 'apartment', params: { id: this.apartment.id } }">{{ $t('reservation')}}</v-btn>
       <v-spacer></v-spacer>
 
       <v-btn icon @click="show = !show">

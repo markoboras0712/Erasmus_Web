@@ -1,8 +1,9 @@
 <template>
   <div>
-    <v-container>
+    <v-container mt-15>
       <image-holder :apartmentId="this.$route.params.id"></image-holder>
       <v-date-picker
+        mt-10
         :allowed-dates="getAllowedDates"
         :disabled="!auth"
         :min="min"

@@ -1,13 +1,13 @@
 <template>
-  <div class="about" style="color: white">
-    <AddApartmentFrom v-if="admin" class="mb-10" />
+  <v-container>
     <apartment
       v-for="(apartment, index) in apartments"
       :key="(apartment, index)"
-      class="mb-7"
+      class="mt-15"
       :apartment="apartment"
     ></apartment>
-  </div>
+    <AddApartmentFrom v-if="admin"/>
+  </v-container>
 </template>
 
 <script>

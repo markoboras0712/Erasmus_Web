@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
+import AuthGuard from './auth-guard'
 
 Vue.use(VueRouter)
 
@@ -28,7 +29,8 @@ const routes = [
   {
     path: '/apartments',
     name: 'apartments',
-    component: () => import('../views/Apartments.vue')
+    component: () => import('../views/Apartments.vue'),
+    beforeEnter: AuthGuard
   },
   {
     path: '/apartment:id',

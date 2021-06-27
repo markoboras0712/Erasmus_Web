@@ -1,6 +1,13 @@
 <template>
-  <v-container>
-    <v-card>
+  <v-container class="mt-10" fluid>
+    <v-carousel hide-delimiters style="height: 45vh">
+      <v-carousel-item
+      v-for="(beach,i) in beaches"
+      :key="i"
+      :src="beach.image"
+    ></v-carousel-item>
+        </v-carousel>
+    <v-card class="mt-15">
       <v-card-title>
         <h1 class="display-1">{{ $t('login')}}</h1>
       </v-card-title>
@@ -31,6 +38,7 @@
 
 <script>
 import messages from '../../data/authRules'
+import beaches from '../../data/novalja/beaches.js'
 
 export default {
   data () {
@@ -56,6 +64,9 @@ export default {
   computed: {
     required () {
       return [v => !!v || this.$t('req')]
+    },
+    beaches () {
+      return beaches
     }
   },
   i18n: {

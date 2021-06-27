@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-list disabled dense dark>
+    <v-list disabled dense dark color="blue">
       <v-list-item v-for="(item, index) in $t('items')" :key="(item, index)" >
         <v-spacer />
         <v-list-item-icon>

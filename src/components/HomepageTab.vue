@@ -2,12 +2,12 @@
   <div>
     <v-tabs
       v-model="tab"
-      background-color="dark"
-      class="elevation-2"
-      dark
-      :grow="grow"
+      dark dense
+      color="white"
+      background-color="blue"
+       fixed-tabs
+          slider-color="yellow"
     >
-      <v-tabs-slider></v-tabs-slider>
       <v-tab
         v-for="(house, index) in $t('houses')"
         :key="(house, index)"
@@ -16,8 +16,7 @@
         {{ titles[index] }}
       </v-tab>
       <v-tab-item
-        class="mt-5"
-        style="background-color: black; color: white"
+        style="background-color: white; color: blue"
         v-for="(house, index) in $t('houses')"
         :key="(house, index)"
         :value="'house-' + titles[index]"
@@ -46,7 +45,6 @@
             :src="iframes[index]"
             frameborder="0"
             style="border: 0; width: 100%; height: 25rem"
-            allowfullscreen=""
           ></iframe>
         </v-container>
       </v-tab-item>

@@ -1,6 +1,6 @@
 <template>
-  <v-container style="background-color: lightgrey">
-    <v-form ref="form" v-model="valid" :lazy-validation="lazy">
+  <v-container style="background-color: lightgrey" class="mt-10 mb-10">
+    <v-form class="pt-7" ref="form" v-model="valid" :lazy-validation="lazy">
       <v-btn @click="showTitleForm = !showTitleForm"
         >{{ $t("title.title") }}:</v-btn
       >

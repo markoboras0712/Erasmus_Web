@@ -1,12 +1,12 @@
 <template>
   <div>
-    <v-container class="mb-10">
+    <v-container class="mb-5 mt-15">
       <v-row>
         <v-col class="md">
-          <novalja style="color:white"></novalja>
+          <novalja style="color:blue"></novalja>
         </v-col>
         <v-col>
-          <pag style="color:white"></pag>
+          <pag style="color:blue"></pag>
         </v-col>
       </v-row>
     </v-container>

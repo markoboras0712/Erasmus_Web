@@ -1,13 +1,13 @@
 <template>
   <v-app>
     <Header></Header>
-
-    <v-main class="mb-5 mt-5">
+    <div style="background-color: white">
+    <v-main>
       <transition name="slide" mode="out-in">
         <router-view></router-view>
       </transition>
     </v-main>
-
+    </div>
     <Footer></Footer>
   </v-app>
 </template>
